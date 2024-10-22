@@ -41,16 +41,16 @@ console.log("Redux Learning using the react(web pack as the bundler");
  
 
 
-//using the function curying to achieve this:  
+// using the function curying to achieve this:  
 
-// function parent() { 
+function parent() { 
 
-//   return function child(){
+  return function child(){
 
-//     return "Hello World";
-//   }
-// }
+    return "Hello World";
+  }
+}
 
-// let getMessage = parent();
+let getMessage = parent();
 
-// console.log(getMessage());
+console.log(getMessage());
