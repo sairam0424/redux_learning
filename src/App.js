@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+console.log("Redux Learning using the react(web pack as the bundler");
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+//functional programming : 
 
-export default App;
+   // pure function : it will always return the same output for a given input and won't have any side effects.
+
+
+//higher order functions : 
+
+// function parent() {
+
+//   function child(){
+
+//      return "Hello World"
+//   } 
+
+//   return child();
+// } 
+
+// const getMessage = parent();
+
+// console.log(getMessage)
+
+
+
+//using closure to get this : 
+
+// function parent() { 
+
+//   function child() {
+
+//     return "Hello World"; 
+//   }
+
+//   return child;
+// }
+
+// let getMessage = parent(); 
+
+// console.log(getMessage());
+ 
+
+
+//using the function curying to achieve this:  
+
+// function parent() { 
+
+//   return function child(){
+
+//     return "Hello World";
+//   }
+// }
+
+// let getMessage = parent();
+
+// console.log(getMessage());
