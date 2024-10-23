@@ -1,6 +1,9 @@
 
 import store from "./redux/store.js";
-import { addTodo , removeTodo, task_completed } from "./redux/Actions.js";
+import { addTodo , removeTodo, task_completed , fetchTodo} from "./redux/Actions.js";
+
+
+
 // const store = require("./store");
 //functional programming : 
 
@@ -69,6 +72,12 @@ store.dispatch(task_completed(1))
 
 store.dispatch(removeTodo(0));
 
+store.dispatch(fetchTodo());
+
 const state = store.getState();
 
-console.log(state)
+console.log(state);
+
+export default function app() {
+  return <h1>Redux Experiment</h1>;
+}
